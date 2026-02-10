@@ -1,0 +1,25 @@
+{
+  "name": "hellotypescript",
+  "version": "1.0.0",
+  "description": "First Typescript project",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "HelloTypescript.ts",
+  "scripts": {
+    "lint": "eslint \"**/*.ts\"",
+    "lint-fix": "eslint **/*.ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "prettier": "^3.8.1",
+    "prettier-eslint": "^16.4.2",
+    "typescript": "^5.9.3"
+  }
+}
