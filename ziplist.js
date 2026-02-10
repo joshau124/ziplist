@@ -27,4 +27,21 @@ function ziplist(list1, list2) {
     }
     return returnList;
 }
+function zipListTheFunctionalWay(list1, list2) {
+    var returnList = [];
+    if (list1.length !== list2.length) {
+        console.log('Lists are not the same length');
+    }
+    else {
+        list1.forEach(function (list, i) {
+            returnList[((1 + i * 2))] = list;
+        });
+        list2.forEach(function (list, i) {
+            returnList[((1 + i) * 2)] = list;
+        });
+    }
+    returnList.shift();
+    return returnList;
+}
 console.log(ziplist([1, 2, 3], ['a', 'b', 'c']));
+console.log(zipListTheFunctionalWay([1, 2, 3], ['a', 'b', 'c']));
